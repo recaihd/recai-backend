@@ -11,7 +11,11 @@ app.get("/", (req, res) => {
 
 app.get("/projetos", (req, res) => {
     res.json({ msg: "rota /projetos funcionando!"})
-})
+});
+
+app.get("/api", (req, res) => {
+  res.json({ msg: "Rota /api funcionando!" });  
+});
 
 app.get("/teste", (req, res) => {
   res.json({ msg: "Rota /teste funcionando!" });
